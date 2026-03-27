@@ -1,0 +1,5 @@
+pdfplumber
+spacy
+scikit-learn
+flask
+streamlit
