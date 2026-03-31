@@ -2,4 +2,6 @@ pdfplumber
 spacy
 scikit-learn
 flask
+nltk
+re
 streamlit
