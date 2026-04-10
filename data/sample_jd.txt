@@ -1,0 +1,8 @@
+Software Engineer
+
+Requirements:
+- Strong proficiency in Python and C++.
+- Experience with Machine Learning algorithms.
+- Experience with Docker and Kubernetes is a plus.
+- Knowledge of relational databases like PostgreSQL.
+- Strong problem-solving skills.

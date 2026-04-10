@@ -1,0 +1,11 @@
+Jane Doe
+Backend Developer
+
+Skills:
+- Programming: Python, Java, JavaScript
+- Frameworks: Django, React
+- Tools: Docker, Git
+- Databases: PostgreSQL, MySQL
+
+Experience:
+Worked as a Backend Developer for 3 years building web applications with Python and Django. Deployed services using Docker. Strong problem-solving skills and team player.
