@@ -1,5 +1,5 @@
-pdfplumber
-spacy
+PyMuPDF
+sentence-transformers
 scikit-learn
 flask
 streamlit
