@@ -1,3 +1,7 @@
+#this file is responsible for parsing the raw text extracted from resumes.
+#  It identifies key sections (like skills, experience, education), extracts relevant information, and matches it against the loaded skill sets to determine which skills are present in the resume. 
+# The output is a structured dictionary that can be used for further processing or analysis in the ATS model.
+
 import re
 import os
 from skill_loader import load_skill_set
@@ -12,12 +16,12 @@ SKILLS, HOT_SKILLS = load_skill_set(
 
 # --- Section Headers ---
 SECTION_PATTERNS = {
-    "skills":      r"\b(skills|technical skills|core competencies|technologies)\b",
-    "experience":  r"\b(experience|work experience|employment|internships?)\b",
-    "education":   r"\b(education|academic background|qualifications)\b",
-    "projects":    r"\b(projects|personal projects|academic projects)\b",
-    "certifications": r"\b(certifications?|courses?|training)\b",
-    "summary":     r"\b(summary|objective|profile|about me)\b",
+    "skills":      r"\b(skills|technical skills|core competencies|technologies|technical stack|expertise|proficiencies|toolkit|abilities)\b",
+    "experience":  r"\b(experience|work experience|employment|internships?|career history|professional background|work history|positions|roles)\b",
+    "education":   r"\b(education|academic background|qualifications|academic|degrees|university|college|school|studies|educational)\b",
+    "projects":    r"\b(projects|personal projects|academic projects|portfolio|achievements|accomplishments|key projects|work samples)\b",
+    "certifications": r"\b(certifications?|courses?|training|licenses?|credentials|professional development|professional certifications)\b",
+    "summary":     r"\b(summary|objective|profile|about me|professional summary|career objective|executive summary|introduction|overview)\b",
 }
 
 def detect_sections(text):

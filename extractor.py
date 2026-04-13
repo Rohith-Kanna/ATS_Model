@@ -1,7 +1,7 @@
-import fitz
+import fitz #pymupdf
 import os
 
-_HERE = os.path.dirname(os.path.abspath(__file__))
+_HERE = os.path.dirname(os.path.abspath(__file__)) # Get the directory of the current file
 
 def extract_text(pdf_path):
     doc = fitz.open(pdf_path)

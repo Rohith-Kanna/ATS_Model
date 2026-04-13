@@ -1,5 +1,8 @@
+#this file is responsible for loading the skill sets from the provided dataset files (skills.csv and Technology_Skills.xlsx). 
+# It processes the data, normalizes it, and filters out any irrelevant or generic terms to create a clean set of skills for use in the ATS model.
+
 import pandas as pd
-import re
+import re # regex for skill matching
 import os
 
 
@@ -18,7 +21,7 @@ _cache = {}
 # Anchor paths to THIS file's directory, so it works from any CWD
 _HERE = os.path.dirname(os.path.abspath(__file__))
 
-def load_skill_set(skills_csv_path, tech_xlsx_path):
+def load_skill_set(skills_csv_path, tech_xlsx_path): #used for loading skills from the dataset files
     key = (skills_csv_path, tech_xlsx_path)
     if key in _cache:
         return _cache[key]
