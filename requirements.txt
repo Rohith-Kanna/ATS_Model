@@ -3,3 +3,6 @@ spacy
 scikit-learn
 flask
 streamlit
+plotly
+pandas
+openpyxl
