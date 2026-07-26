@@ -1,8 +1,6 @@
 PyMuPDF
 sentence-transformers
 scikit-learn
-fastapi
-uvicorn
 streamlit
 plotly
 pandas
